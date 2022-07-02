@@ -19,10 +19,6 @@ public static class Program
     public static void Main(string[] arguments)
     {
         Console.Title = $"{Settings.ApplicationName} Ver. {Settings.ApplicationVersion}";
-
-        AnsiConsole.MarkupLine("Hello, [green]exile[/]!");
-        AnsiConsole.MarkupLine("Loading [green]data files[/]...");
-
         if (!DataManager.Initialize())
             ExitWithError("Failed to initialize the [yellow]data manager[/].");
 
